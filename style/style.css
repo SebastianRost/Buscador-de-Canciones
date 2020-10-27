@@ -1,0 +1,50 @@
+html {
+	background: black;
+	font-family: sans-serif;
+	color: thistle;
+	text-align: center;
+}
+main {
+	display: flex;
+	flex-direction: column-reverse;
+}
+input {
+	margin: 5px;
+}
+form {
+	border: 2px solid white;
+	border-radius: 20px;
+	padding: 5px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.loader {
+	display: none;
+	margin: auto;
+}
+.song blockquote {
+	white-space: pre-wrap;
+}
+.ir-arriba {
+	display: none;
+	padding: 20px;
+	background: #024959;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+@media screen and (min-width: 800px) {
+	main {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	main > * {
+		flex-basis: 40%;
+		padding: 1rem;
+	}
+}
